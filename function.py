@@ -20,4 +20,10 @@ def grid_values(grid):
         - keys: Box labels, e.g. 'A1'
         - values: Value in corresponding box, e.g. '8', or '.' if it is empty.
     """
-    pass
+
+    dict1 = { }
+    for x in boxes
+        
+        dict1 [x]= grid
+
+    return dict1
