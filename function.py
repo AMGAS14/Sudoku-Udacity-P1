@@ -22,8 +22,12 @@ def grid_values(grid):
     """
 
     dict1 = { }
-    for x in boxes
+
+    i = 0
+
+    for x in boxes :
         
-        dict1 [x]= grid
+        dict1 [x]= grid[i]
+        i +=1
 
     return dict1
