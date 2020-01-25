@@ -26,8 +26,10 @@ def grid_values(grid):
     i = 0
 
     for x in boxes :
-        
-        dict1 [x]= grid[i]
+        if(grid[i]=".")
+            dict1[x]="123456789"
+        else
+            dict1 [x]= grid[i]
         i +=1
 
     return dict1
