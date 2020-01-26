@@ -21,14 +21,14 @@ def grid_values(grid):
         - values: Value in corresponding box, e.g. '8', or '.' if it is empty.
     """
 
-    dict1 = { }
+     dict1 = { }
 
     i = 0
 
     for x in boxes :
-        if(grid[i]=".")
+        if grid[i]=="." :
             dict1[x]="123456789"
-        else
+        else :
             dict1 [x]= grid[i]
         i +=1
 
