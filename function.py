@@ -33,3 +33,16 @@ def grid_values(grid):
         i +=1
 
     return dict1
+
+
+
+
+def diagonalSudoku():
+
+    """
+    solves the diagonal sudoku using constraint propagation 
+    by adding the new constraint of the diagonal sudoku.
+    """
+
+    
+    pass
