@@ -48,13 +48,17 @@ def eliminate(values):
     Returns:
         Resulting Sudoku in dictionary form after eliminating values.
     """
-    pass
+    
+
+
+    for x in boxes :
+
+        if len(values[x])= 1:
 
 
 
-
-
-
+    
+    return values
 
 
 
