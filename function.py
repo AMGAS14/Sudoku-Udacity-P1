@@ -54,10 +54,12 @@ def eliminate(values):
     for x in boxes :
 
         if len(values[x])= 1:
+            """
+              The for loop will iterate over all the boxes in the puzzle that only have one value 
+              assigned to them, and it will remove this value from every one of its peers.  
 
+            """
 
-
-    
     return values
 
 
