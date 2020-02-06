@@ -1,17 +1,19 @@
-# solution.py
-
-
 from utils import *
 
-def grid_values(grid):
-    """Convert grid string into {<box>: <value>} dict with '.' value for empties.
+def eliminate(values):
+    """Eliminate values from peers of each box with a single value.
+
+    Go through all the boxes, and whenever there is a box with a single value,
+    eliminate this value from the set of values of all its peers.
 
     Args:
-        grid: Sudoku grid in string form, 81 characters long
+        values: Sudoku in dictionary form.
     Returns:
-        Sudoku grid in dictionary form:
-        - keys: Box labels, e.g. 'A1'
-        - values: Value in corresponding box, e.g. '8', or '.' if it is empty.
+        Resulting Sudoku in dictionary form after eliminating values.
     """
-    assert len(grid) == 81, "Input grid must be a string of length 81 (9x9)"
-    return dict(zip(boxes, grid))
+    solved_values = [box for box in values.keys() if len(values[box]) == 1]
+    for box in solved_values:
+        digit = values[box]
+        for peer in peers[box]:
+            values[peer] = values[peer].replace(digit,'')
+    return values
