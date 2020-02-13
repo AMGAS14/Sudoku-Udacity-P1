@@ -12,7 +12,9 @@ def eliminate(values):
     Returns:
         Resulting Sudoku in dictionary form after eliminating values.
     """
-    for x in values :
 
-        if(len(values[x])=1)
+     solved_values = [box for box in values.keys() if len(values[box]) == 1]
+
+     
+
             
